@@ -46,7 +46,6 @@ Combines computer vision and natural language processing to:
 - **Express.js** - Backend API server
 
 ### Data & Storage
-- **Supabase** - Cloud database and real-time features
 - **Axios** - HTTP client for API calls
 - **jsPDF** - PDF report generation
 
