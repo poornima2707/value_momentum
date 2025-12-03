@@ -101,11 +101,6 @@ An AI-powered web application that transforms damage photos into professional in
 2. Sign up and get API key
 3. Add to `.env` as `VITE_OPENROUTER_API_KEY`
 
-### Supabase Setup
-1. Create project at [Supabase](https://supabase.com/)
-2. Get project URL and anon key
-3. Add to `.env` as `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
-
 ## 📁 Project Structure
 
 ```
@@ -127,28 +122,6 @@ loss-description-generator/
 ├── package.json
 ├── vite.config.js
 └── README.md
-```
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-```bash
-npm i -g vercel
-vercel
-```
-
-### Netlify
-```bash
-npm run build
-# Drag and drop the 'dist' folder to Netlify dashboard
-```
-
-### Firebase Hosting
-```bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting
-firebase deploy
 ```
 
 ## 🤝 Contributing
