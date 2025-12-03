@@ -4,35 +4,35 @@ An AI-powered web application that transforms damage photos into professional in
 
 ## 🚀 Features
 
-- *AI-Powered Image Analysis*: Upload up to 6 damage photos for instant analysis
-- *Multiple AI Models*: Supports Google Gemini, LLaVA, and Qwen vision models
-- *Structured Reports*: Generates professional insurance-grade loss descriptions
-- *Interactive Chat*: AI assistant for clarifying assessment details
-- *PDF Generation*: Creates formatted reports ready for submission
-- *Damage Categories*: Supports property, vehicle, agricultural, and natural disaster damage
-- *Confidence Scoring*: Shows AI confidence levels for each assessment section
-- *Responsive Design*: Works seamlessly on desktop and mobile devices
+- **AI-Powered Image Analysis**: Upload up to 6 damage photos for instant analysis
+- **Multiple AI Models**: Supports Google Gemini, LLaVA, and Qwen vision models
+- **Structured Reports**: Generates professional insurance-grade loss descriptions
+- **Interactive Chat**: AI assistant for clarifying assessment details
+- **PDF Generation**: Creates formatted reports ready for submission
+- **Damage Categories**: Supports property, vehicle, agricultural, and natural disaster damage
+- **Confidence Scoring**: Shows AI confidence levels for each assessment section
+- **Responsive Design**: Works seamlessly on desktop and mobile devices
 
 ## 🛠 Tech Stack
 
 ### Frontend
-- *React 18* - Modern UI framework
-- *Vite* - Fast build tool and development server
-- *React Router* - Client-side routing
-- *Lucide React* - Beautiful icons
-- *CSS3* - Responsive styling
+- **React 18** - Modern UI framework
+- **Vite** - Fast build tool and development server
+- **React Router** - Client-side routing
+- **Lucide React** - Beautiful icons
+- **CSS3** - Responsive styling
 
 ### Backend & AI
-- *Google Gemini Pro Vision* - Primary AI model for image analysis
-- *LLaVA* - Open-source vision-language model
-- *Qwen* - Alternative AI model for analysis
-- *OpenRouter SDK* - Unified AI model access
-- *Express.js* - Backend API server
+- **Google Gemini Pro Vision** - Primary AI model for image analysis
+- **LLaVA** - Open-source vision-language model
+- **Qwen** - Alternative AI model for analysis
+- **OpenRouter SDK** - Unified AI model access
+- **Express.js** - Backend API server
 
 ### Data & Storage
-- *Supabase* - Cloud database and real-time features
-- *Axios* - HTTP client for API calls
-- *jsPDF* - PDF report generation
+- **Supabase** - Cloud database and real-time features
+- **Axios** - HTTP client for API calls
+- **jsPDF** - PDF report generation
 
 ## 📋 Prerequisites
 
@@ -42,66 +42,73 @@ An AI-powered web application that transforms damage photos into professional in
 
 ## 🔧 Installation
 
-1. *Clone the repository*
-   bash
+1. **Clone the repository**
+   ```bash
    git clone https://github.com/yourusername/loss-description-generator.git
    cd loss-description-generator
-   
+   ```
 
-2. *Install dependencies*
-   bash
+2. **Install dependencies**
+   ```bash
    npm install
-   
+   ```
 
-3. *Set up environment variables*
+3. **Set up environment variables**
 
-   Create a .env file in the root directory:
-   env
+   Create a `.env` file in the root directory:
+   ```env
    VITE_GEMINI_API_KEY=your_gemini_api_key_here
    VITE_SUPABASE_URL=your_supabase_url
    VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
    VITE_OPENROUTER_API_KEY=your_openrouter_api_key
-   
+   ```
 
-4. *Start development server*
-   bash
+4. **Start development server**
+   ```bash
    npm run dev
-   
+   ```
 
-5. *Build for production*
-   bash
+5. **Build for production**
+   ```bash
    npm run build
-   
+   ```
 
 ## 🚀 Usage
 
-1. *Access the application* at http://localhost:3000
+1. **Access the application** at `http://localhost:3000`
 
-2. *Upload Images*: Drag and drop or select up to 6 damage photos
+2. **Upload Images**: Drag and drop or select up to 6 damage photos
 
-3. *Provide Details*: Fill in incident information and select loss type
+3. **Provide Details**: Fill in incident information and select loss type
 
-4. *AI Analysis*: The system analyzes images and generates assessment
+4. **AI Analysis**: The system analyzes images and generates assessment
 
-5. *Review & Edit*: Review the generated report and make adjustments
+5. **Review & Edit**: Review the generated report and make adjustments
 
-6. *Generate PDF*: Download professional PDF report for insurance submission
+6. **Generate PDF**: Download professional PDF report for insurance submission
 
-7. *Chat Support*: Use the AI chat for clarification or additional questions
+7. **Chat Support**: Use the AI chat for clarification or additional questions
 
 ## 🔑 API Keys Setup
 
 ### Google Gemini API
 1. Visit [Google AI Studio](https://makersuite.google.com/app/apikey)
 2. Create a new API key
-3. Add to .env as VITE_GEMINI_API_KEY
+3. Add to `.env` as `VITE_GEMINI_API_KEY`
 
-### OpenRouter API 
+### OpenRouter API (Optional)
 1. Visit [OpenRouter](https://openrouter.ai/)
 2. Sign up and get API key
-3. Add to .env as VITE_OPENROUTER_API_KEY
+3. Add to `.env` as `VITE_OPENROUTER_API_KEY`
+
+### Supabase Setup
+1. Create project at [Supabase](https://supabase.com/)
+2. Get project URL and anon key
+3. Add to `.env` as `VITE_SUPABASE_URL` and `VITE_SUPABASE_ANON_KEY`
 
 ## 📁 Project Structure
+
+```
 loss-description-generator/
 ├── public/                 # Static assets
 ├── src/
@@ -120,23 +127,45 @@ loss-description-generator/
 ├── package.json
 ├── vite.config.js
 └── README.md
+```
 
+## 🚀 Deployment
+
+### Vercel (Recommended)
+```bash
+npm i -g vercel
+vercel
+```
+
+### Netlify
+```bash
+npm run build
+# Drag and drop the 'dist' folder to Netlify dashboard
+```
+
+### Firebase Hosting
+```bash
+npm install -g firebase-tools
+firebase login
+firebase init hosting
+firebase deploy
+```
 
 ## 🤝 Contributing
 
 1. Fork the repository
-2. Create a feature branch (git checkout -b feature/amazing-feature)
-3. Commit your changes (git commit -m 'Add amazing feature')
-4. Push to the branch (git push origin feature/amazing-feature)
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
 5. Open a Pull Request
 
 ## 📝 Supported Damage Types
 
-- *Property Damage*: Fire, flood, earthquake, roof damage
-- *Vehicle Damage*: Collision, hail, fire, comprehensive
-- *Agricultural*: Crop damage, farm equipment, livestock
-- *Natural Disasters*: Hurricane, tornado, tsunami, earthquake
-- *Commercial Loss*: Factory, warehouse, equipment damage
+- **Property Damage**: Fire, flood, earthquake, roof damage
+- **Vehicle Damage**: Collision, hail, fire, comprehensive
+- **Agricultural**: Crop damage, farm equipment, livestock
+- **Natural Disasters**: Hurricane, tornado, tsunami, earthquake
+- **Commercial Loss**: Factory, warehouse, equipment damage
 
 ## 🔒 Security
 
@@ -144,6 +173,7 @@ loss-description-generator/
 - API keys are managed securely through environment variables
 - No sensitive user data is retained after session
 - All AI processing happens through secure API endpoints
+
 
 ## 🙏 Acknowledgments
 
