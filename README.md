@@ -96,19 +96,12 @@ An AI-powered web application that transforms damage photos into professional in
 2. Create a new API key
 3. Add to .env as VITE_GEMINI_API_KEY
 
-### OpenRouter API (Optional)
+### OpenRouter API 
 1. Visit [OpenRouter](https://openrouter.ai/)
 2. Sign up and get API key
 3. Add to .env as VITE_OPENROUTER_API_KEY
 
-### Supabase Setup
-1. Create project at [Supabase](https://supabase.com/)
-2. Get project URL and anon key
-3. Add to .env as VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY
-
 ## 📁 Project Structure
-
-
 loss-description-generator/
 ├── public/                 # Static assets
 ├── src/
@@ -127,28 +120,6 @@ loss-description-generator/
 ├── package.json
 ├── vite.config.js
 └── README.md
-
-
-## 🚀 Deployment
-
-### Vercel (Recommended)
-bash
-npm i -g vercel
-vercel
-
-
-### Netlify
-bash
-npm run build
-# Drag and drop the 'dist' folder to Netlify dashboard
-
-
-### Firebase Hosting
-bash
-npm install -g firebase-tools
-firebase login
-firebase init hosting
-firebase deploy
 
 
 ## 🤝 Contributing
@@ -174,10 +145,6 @@ firebase deploy
 - No sensitive user data is retained after session
 - All AI processing happens through secure API endpoints
 
-## 📄 License
-
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
 ## 🙏 Acknowledgments
 
 - Google Gemini for advanced AI vision capabilities
@@ -185,10 +152,3 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - Supabase for reliable backend services
 - React and Vite communities for excellent development tools
 
-## 📞 Support
-
-For questions or support, please open an issue on GitHub or contact the development team.
-
----
-
-*Made with ❤ for the insurance industry*
