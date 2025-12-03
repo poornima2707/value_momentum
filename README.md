@@ -277,4 +277,4 @@ For detailed documentation on:
 
 ---
 
-**Made with ❤️ for the insurance industry** | **Powered by Multimodal AI** | **Built with React & Vite*
+
